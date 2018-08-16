@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="Description" content="Helm Chart Repository with support for Amazon S3, Google Cloud Storage, Microsoft Azure Blob Storage, Alibaba Cloud OSS Storage, and Openstack Object Storage.">
+    <meta name="theme-color" content="#326ce6"/>
     <title>{{ $.Site.Title }}</title>
     {{ $options := (dict "targetPath" "style.css" "outputStyle" "compressed" "enableSourceMap" false "includePaths" (slice "node_modules/assets/scss/main.scss")) }}
     {{ $style := resources.Get "scss/main.scss" | resources.ToCSS $options }}

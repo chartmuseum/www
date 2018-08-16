@@ -6,7 +6,12 @@
   @include bg-grad();
 
   h1 {
-    line-height: 1.875rem;
+    font-size: 1.875rem;
+    line-height: 2.375rem;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 2.125rem;
+    }
   }
 }
 

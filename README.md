@@ -24,7 +24,7 @@ or for developing with `hugo server --buildDrafts --buildFuture`, use:
 hugo server -D
 ```
 
-Then visit http://localhost:1313/ to preview. Hugo will automatically reload the CSS or refresh the whole page, when stylesheets or content changes.
+Then visit http://localhost:1313/chartmuseum-www to preview. Hugo will automatically reload the CSS or refresh the whole page, when stylesheets or content changes.
 
 ### Static build
 

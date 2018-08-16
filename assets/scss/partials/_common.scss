@@ -6,9 +6,29 @@ body {
 }
 
 .btn {
-  box-shadow: 0 4px 6px rgba($blue-dark, 0.7),
-  0 1px 3px rgba($blue-dark, 0.7);
-  font-weight: 900 !important;
+  box-shadow: 0 4px 6px rgba($blue-dark, 0.80),
+  0 1px 3px rgba($blue-dark, 0.80);
+}
+
+.btn-secondary {
+  color: #1340A4;
+  font-weight: 900;
+  letter-spacing: 0.03rem;
+  padding-bottom: 10px;
+  @include bg-grad($secondary, lighten($secondary, 15%), 0%, 100%, $deg: 0deg);
+
+  &:hover {
+    color: darken($primary, 10%);
+  }
+}
+
+.btn-pulse {
+  -webkit-animation-name: pulsing;
+  -webkit-animation-duration: 2.5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: pulsing;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
 }
 
 hr {
@@ -69,5 +89,20 @@ hr {
   }
   100% {
     transform: translateY(0px);
+  }
+}
+
+@keyframes pulsing {
+  from {
+    background-color: lighten($secondary, 10%);
+    -webkit-box-shadow: 0 0 9px $blue-dark;
+  }
+  50% {
+    background-color: $secondary;
+    -webkit-box-shadow: 0 0 18px $secondary;
+  }
+  to {
+    background-color: $secondary;
+    -webkit-box-shadow: 0 0 9px $blue-dark;
   }
 }
