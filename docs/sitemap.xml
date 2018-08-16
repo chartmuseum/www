@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://codefresh-io.github.io/chartmuseum-www/docs/how-to-run/installation/</loc>
+    <lastmod>2018-08-06T16:25:43+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codefresh-io.github.io/chartmuseum-www/docs/api/helm-chart-repository/</loc>
+    <lastmod>2018-08-06T14:48:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codefresh-io.github.io/chartmuseum-www/docs/api/</loc>
+    <lastmod>2018-01-28T22:01:36+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codefresh-io.github.io/chartmuseum-www/docs/how-to-run/configuration/</loc>
+    <lastmod>2018-08-06T16:26:30+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codefresh-io.github.io/chartmuseum-www/docs/api/chart-manipulation/</loc>
+    <lastmod>2018-08-06T14:49:16+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codefresh-io.github.io/chartmuseum-www/docs/uploading-a-chart-package/</loc>
+    <lastmod>2018-01-28T22:01:36+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codefresh-io.github.io/chartmuseum-www/docs/how-to-run/using-amazon-s3/</loc>
+    <lastmod>2018-08-06T16:27:08+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codefresh-io.github.io/chartmuseum-www/docs/installing-charts-into-kubernetes/</loc>
+    <lastmod>2018-08-06T16:22:37+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codefresh-io.github.io/chartmuseum-www/docs/api/server-info/</loc>
+    <lastmod>2018-08-06T14:49:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codefresh-io.github.io/chartmuseum-www/docs/how-to-run/</loc>
+    <lastmod>2018-08-06T16:47:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codefresh-io.github.io/chartmuseum-www/docs/how-to-run/using-with-google-cloud-storage/</loc>
+    <lastmod>2018-08-06T16:27:44+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codefresh-io.github.io/chartmuseum-www/docs/multitenancy/</loc>
+    <lastmod>2018-08-06T16:47:41+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codefresh-io.github.io/chartmuseum-www/docs/how-to-run/using-with-microsoft-azure-blob-storage/</loc>
+    <lastmod>2018-08-06T16:28:34+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codefresh-io.github.io/chartmuseum-www/docs/cache/</loc>
+    <lastmod>2018-08-06T16:47:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codefresh-io.github.io/chartmuseum-www/docs/how-to-run/using-with-alibaba-cloud-oss-storage/</loc>
+    <lastmod>2018-08-06T16:30:10+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codefresh-io.github.io/chartmuseum-www/docs/prometheus-metrics/</loc>
+    <lastmod>2018-08-06T16:48:44+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codefresh-io.github.io/chartmuseum-www/docs/how-to-run/using-with-openstack-object-storage/</loc>
+    <lastmod>2018-08-06T16:43:57+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codefresh-io.github.io/chartmuseum-www/docs/notes-on-index.yaml/</loc>
+    <lastmod>2018-08-06T16:49:07+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codefresh-io.github.io/chartmuseum-www/docs/how-to-run/using-with-local-filesystem-storage/</loc>
+    <lastmod>2018-08-06T16:44:27+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codefresh-io.github.io/chartmuseum-www/docs/mirroring-the-official-kubernetes-repositories/</loc>
+    <lastmod>2018-08-06T16:50:12+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codefresh-io.github.io/chartmuseum-www/docs/how-to-run/basic-auth/</loc>
+    <lastmod>2018-08-06T16:44:49+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codefresh-io.github.io/chartmuseum-www/docs/how-to-run/https/</loc>
+    <lastmod>2018-08-06T16:45:01+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codefresh-io.github.io/chartmuseum-www/docs/how-to-run/other-cli-options/</loc>
+    <lastmod>2018-08-06T16:45:13+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codefresh-io.github.io/chartmuseum-www/docs/how-to-run/docker-image/</loc>
+    <lastmod>2018-08-06T16:46:50+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codefresh-io.github.io/chartmuseum-www/docs/how-to-run/helm-chart/</loc>
+    <lastmod>2018-08-06T16:47:03+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codefresh-io.github.io/chartmuseum-www/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://codefresh-io.github.io/chartmuseum-www/</loc>
+    <lastmod>2018-08-06T16:25:43+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://codefresh-io.github.io/chartmuseum-www/docs/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://codefresh-io.github.io/chartmuseum-www/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

@@ -1,0 +1,20 @@
+<footer class="mt-3 mt-lg-5 pt-md-5">
+  <div class="container">
+    <div class="row align-items-center justify-content-lg-center">
+      <ul class="nav flex-column flex-lg-row">
+        <li class="nav-item"><a href="{{ .Site.BaseURL }}/docs" class="nav-link lead--lg"><i class="fas fa-book mr-1"></i> Read the docs</a></li>
+        <li class="nav-item"><a href="{{ $.Site.Params.repo }}" target="_blank" class="nav-link lead--lg"><i class="fas fa-info-circle mr-1"></i> Help</a></li>
+        <li class="nav-item"><a href="{{ $.Site.Params.repo }}" target="_blank" class="nav-link lead--lg"><i class="fas fa-hands-helping mr-1"></i> Contribute</a></li>
+        <li class="nav-item"><a href="{{ $.Site.Params.repo }}" target="_blank" class="nav-link lead--lg"><i class="fab fa-github mr-1"></i> ChartMuseum on GitHub</a></li>
+        <li class="nav-item"><a href="http://slack.k8s.io" target="_blank" class="nav-link lead--lg"><i class="fab fa-slack mr-1"></i> Join us on Slack</a></li>
+      </ul>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col d-flex flex-column flex-lg-row justify-content-lg-center align-items-lg-center mt-3 mb-4">
+        {{ partial "svg/logo_footer.html" }}
+        <small class="text-white mt-2 ml-1 mt-lg-0 ml-lg-3"><i class="fas fa-heart mr-1" style="color: #ff4876;"></i>Lovingly maintained by <a href="https://codefresh.io" target="_blank" class="text-secondary font-weight-bold">Codefresh</a></small>
+      </div>
+    </div>
+  </div>
+</footer>

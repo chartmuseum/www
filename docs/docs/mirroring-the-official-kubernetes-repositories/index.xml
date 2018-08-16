@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mirroring the Official Kubernetes Repositories on ChartMuseum - Helm Chart Repository</title>
+    <link>https://codefresh-io.github.io/chartmuseum-www/docs/mirroring-the-official-kubernetes-repositories/</link>
+    <description>Recent content in Mirroring the Official Kubernetes Repositories on ChartMuseum - Helm Chart Repository</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 06 Aug 2018 16:50:12 +0100</lastBuildDate>
+    
+	<atom:link href="https://codefresh-io.github.io/chartmuseum-www/docs/mirroring-the-official-kubernetes-repositories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

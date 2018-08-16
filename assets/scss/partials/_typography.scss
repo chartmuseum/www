@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Lato";
+  font-weight: normal;
+  src: url("./fonts/Lato-Regular.ttf") format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: bold;
+  src: url("./fonts/Lato-Bold.ttf") format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 900;
+  src: url("./fonts/Lato-Black.ttf") format('truetype');
+  font-display: swap;
+}
+
+h1 {
+  font-size: 1.625rem
+}
+
+@include media-breakpoint-up(md) {
+  h1 {
+    font-size: 1.875rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  h1 {
+    font-size: 2.25rem;
+  }
+}

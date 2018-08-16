@@ -1,0 +1,151 @@
+//
+// #Hero
+// ==========================================================================
+.hero {
+  overflow: hidden;
+  @include bg-grad();
+
+  h1 {
+    line-height: 1.875rem;
+  }
+}
+
+.hero__img {
+  max-width: 100%;
+
+  @include media-breakpoint-up(md) {
+    max-width: 650px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    max-width: 780px;
+  }
+}
+
+//
+// #What is
+// ==========================================================================
+.icon__animated {
+  height: 130px;
+
+  @include media-breakpoint-up(md) {
+    height: 250px;
+
+    .float {
+      animation: floating 1.5s ease-in-out infinite alternate;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    height: 340px;
+  }
+}
+
+//
+// #Section Quotes
+// ==========================================================================
+.quotes__card {
+  blockquote {
+    margin-bottom: 0;
+    padding-left: 30px;
+    position: relative;
+
+    &::before {
+      content: "\f10d";
+      position: absolute;
+      font-family: "Font Awesome 5 Free";
+      color: #326ce6;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &:nth-child(2n + 3) blockquote::before {
+    content: "\f281";
+    font-family: "Font Awesome 5 Brands";
+  }
+
+  &:nth-child(3n + 1) blockquote::before {
+    content: "\f099";
+    font-family: "Font Awesome 5 Brands";
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .quotes__col {
+    column-count: 2;
+    column-gap: 1.25rem;
+  }
+
+  .quotes__col .quotes__card {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .quotes__col {
+    column-count: 3;
+  }
+}
+
+.quotes__col .quotes__card {
+  margin-bottom: 1rem;
+}
+
+.quotes__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border-radius: 4px;
+  padding: 15px;
+  box-shadow: 0 3px 5px rgba(35, 59, 111, 0.12);
+}
+
+//
+// #Section Instructions
+// ==========================================================================
+ #Instructions {
+   @include bg-grad();
+ }
+
+.instructions__title {
+  position: relative;
+  overflow: hidden;
+}
+
+@include media-breakpoint-up(md) {
+  .instructions__title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -340px;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+pre {
+  background-color: #041c5b;
+  border-radius: 5px;
+  color: #fff;
+  padding: 30px;
+}
+
+pre code {
+  color: #fff !important;
+  line-height: 1.85rem;
+  font-size: 1.125rem !important;
+}
+
+//
+// #Footer
+// ==========================================================================
+.footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}

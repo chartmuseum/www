@@ -1,0 +1,25 @@
+// Variables
+@import "partials/variables";
+
+// Bootstrap
+@import "node_modules/bootstrap/scss/bootstrap-reboot";
+@import "node_modules/bootstrap/scss/bootstrap-grid";
+$theme-colors: map-remove($theme-colors, "info", "success", "danger", "warning");
+@import "node_modules/bootstrap/scss/navbar";
+@import "node_modules/bootstrap/scss/nav";
+@import "node_modules/bootstrap/scss/buttons";
+@import "node_modules/bootstrap/scss/utilities/spacing";
+@import "node_modules/bootstrap/scss/utilities/text";
+@import "node_modules/bootstrap/scss/utilities/background";
+
+// Partials
+@import "partials/typography";
+@import "partials/common";
+@import "partials/mixins";
+@import "partials/home";
+@import "partials/docs";
+
+// FontAwesome
+@import "node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+@import "node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";

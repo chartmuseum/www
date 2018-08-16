@@ -1,0 +1,266 @@
+//
+// Sidebar
+// ==========================================================================
+.sidebar__wrapper {
+  width: 340px;
+  box-sizing: border-box;
+  left: -340px;
+  top: 0;
+  bottom: 0;
+  z-index: 700;
+  position: fixed;
+  min-height: 100%;
+  transition: all 300ms ease;
+  box-shadow: 3px 0 5px rgba(35, 59, 111, 0.12);
+  @include bg-grad();
+
+  @include media-breakpoint-up(lg) {
+    left: 0;
+  }
+
+  nav {
+    height: 100vh;
+    overflow-y: scroll;
+
+    ul {
+      .nav__link {
+        @extend .nav-link;
+
+        padding-left: 30px;
+        padding-right: 30px;
+        font-weight: 900;
+        color: $white;
+
+        &:hover {
+          color: $secondary;
+          background-color: rgba($blue-dark, 0.5);
+        }
+      }
+    }
+  }
+
+  aside {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 340px;
+    background-color: lighten($blue-dark, 9%);
+  }
+}
+
+.drawer__toggler {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  color: $primary;
+  position: absolute;
+  top: 20px;
+  right: -60px;
+  box-shadow: 0 3px 10px rgba(35, 59, 111, 0.12);
+  transition: right 300ms ease;
+  background-color: $white;
+
+  &.active {
+    right: -22px !important;
+  }
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  min-width: 100%;
+  min-height: 100%;
+  background: rgba(darken($blue-dark, 20%), 0.3);
+  z-index: 10;
+  display: none;
+
+  &.show {
+    display: block;
+  }
+}
+
+.noscroll {
+  overflow: hidden;
+}
+
+.show {
+  left: 0 !important;
+}
+
+.submenu {
+  background-color: darken($blue-dark, 7%);
+
+  .nav__link {
+    @extend .nav-link;
+
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 40px !important;
+    font-weight: 500 !important;
+
+    &:hover {
+      color: $green;
+      background-color: darken($blue-dark, 10%) !important;
+    }
+  }
+}
+
+//
+// Main
+// ==========================================================================
+.docs {
+  line-height: 1.625rem;
+}
+
+table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+
+  th {
+    font-weight: 600;
+  }
+
+  th,
+  td {
+    padding: 6px 13px;
+    border: 1px solid lighten($primary, 35%);
+  }
+
+   tr {
+    background-color: $white;
+    border-top: 1px solid lighten($primary, 35%);
+
+    &:nth-child(2n) {
+     background-color: lighten($primary, 43%);
+   }
+  }
+}
+
+main {
+  .section__title {
+    font-weight: 900;
+    margin-bottom: 0;
+    position: relative;
+    overflow-x: hidden;
+    padding: 5px 0;
+
+    &::after {
+    content: "";
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      height: 1px;
+      background-color: lighten($primary, 25%);
+    }
+
+    a {
+      background-color: white;
+      padding-right: 15px;
+    }
+  }
+
+  .section__tittle__link {
+    font-weight: 900;
+    letter-spacing: 0.0625rem;
+    position: relative;
+    @extend .text-dark;
+
+    &::after {
+      content: "\f0c1";
+      position: absolute;
+      font-family: "Font Awesome 5 Free";
+      font-size: 0.75rem;
+      top: 0;
+      left: -17px;
+
+      @include media-breakpoint-up(lg) {
+        font-size: 0.875rem;
+        top: -2px;
+        right: -25px;
+        left: auto;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding-left: 340px !important;
+  }
+
+  p,
+  li {
+    color: $dark;
+  }
+
+  pre {
+    padding: 10px;
+    overflow: auto;
+    line-height: 1.45;
+    background-color: lighten($primary, 42.8%);
+    border-radius: 3px;
+    margin-bottom: $spacer * 2;
+
+    code {
+      padding: 0;
+      font-size: 85% !important;
+      background-color: transparent;
+      color: darken($primary, 11%) !important;
+      word-wrap: break-word;
+    }
+  }
+
+  code {
+    padding: 0.2em 0.4em;
+    margin: 0;
+    font-size: 85%;
+    background-color: lighten($primary, 42.8%);
+    color: darken($primary, 11%);
+    border-radius: 3px;
+    word-wrap: break-word;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 2px;
+    list-style: none;
+
+    li {
+      margin-bottom: 10px;
+
+      &::before {
+        content: "•";
+        color: $black;
+        font-size: 0.75rem;
+        vertical-align: middle;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  blockquote {
+    background-color: #fdf5da;
+    padding: 10px;
+    border-radius: 5px;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  sub,
+  sup {
+    font-size: 100%;
+  }
+}
+
+.open {
+  display: block !important;
+}
+
+.close {
+  display: none !important;
+}

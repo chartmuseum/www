@@ -1,0 +1,9 @@
+<nav class="py-4">
+  <ul class="nav flex-column">
+    {{ with .Sections }}
+      {{ range .ByWeight }}
+        {{ partial "menu_page_list.html" . }}
+      {{ end }}
+    {{ end }}
+  </ul>
+</nav>

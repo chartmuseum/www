@@ -1,0 +1,26 @@
+{{ define "main" }}
+<div class="container-fluid docs">
+ {{ partial "sidebar.html" . }}
+  <main>
+    <div class="container">
+      <div class="row my-4 align-items-center justify-content-md-center">
+        <div class="col-12 col-md-10 d-flex">
+          <nav class="nav ml-auto">
+            <a class="nav-link" href="{{ .Site.BaseURL }}"><i class="fas fa-home mr-2"></i>ChartMuseum</a>
+            <a class="nav-link pr-0" target="_blank" href="{{ $.Site.Params.repo }}"><i class="fab fa-github mr-2"></i>GitHub</a>
+          </nav>
+        </div>
+      </div>
+      <div class="row mt-4 justify-content-md-center">
+        {{ with .Sections }}
+        {{ range .ByWeight }}
+          {{ partial "section_list.html" . }}
+        {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </main>
+</div>
+{{ $docs := resources.Get "js/docs.js" | resources.Minify }}
+<script type="text/javascript" src="{{ $docs.Permalink }}"></script>
+{{end}}

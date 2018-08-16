@@ -1,0 +1,17 @@
+<div class="sidebar__wrapper">
+  <div class="sidebar">
+    <button class="btn drawer__toggler d-lg-none">
+      <i class="fas fa-ellipsis-v"></i>
+    </button>
+    <div class="bg-white py-4 px-4">
+      <a href="#">
+        {{ partial "svg/logo_docs.html" }}
+      </a>
+    </div>
+    {{ partial "menu.html" . }}
+  </div>
+  <aside class="p-4">
+    <a class="btn btn-light btn-block" target="_blank" href="{{ $.Site.Params.repo }}"><i class="fab fa-github mr-2"></i> Contribute</a>
+  </aside>
+</div>
+<div class="backdrop"></div>

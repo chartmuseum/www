@@ -1,0 +1,10 @@
+baseURL = "https://codefresh-io.github.io/chartmuseum-www"
+publishDir = "docs"
+languageCode = "en-us"
+languageLang = "en"
+title = "ChartMuseum - Helm Chart Repository"
+
+[params]
+repo = "https://github.com/helm/chartmuseum"
+
+disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]

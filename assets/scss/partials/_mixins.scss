@@ -1,0 +1,7 @@
+@mixin bg-grad($start-color: $blue-dark, $end-color: $primary, $start-percent: 15%, $end-percent: 100%, $deg: 157deg) {
+  background: $start-color;
+  background: -moz-linear-gradient($deg, $start-color $start-percent, $end-color $end-percent);
+  background: -webkit-linear-gradient($deg, $start-color $start-percent, $end-color $end-percent);
+  background: linear-gradient($deg, $start-color $start-percent, $end-color $end-percent);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="$start-color", endColorstr="$end-color", GradientType=1);
+}

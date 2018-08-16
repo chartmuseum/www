@@ -1,0 +1,52 @@
+// Colors
+$white: #fff;
+$blue:#326ce6;
+$blue-dark:#052b8d;
+$blue-light:#546497;
+$turquoise: #2ae5f4;
+$dark: #333;
+$secondary: $turquoise;
+
+$theme-colors: (
+  "primary": $blue,
+  "secondary": $turquoise,
+  "dark": $dark,
+  "light": #f8f9fb,
+  "blue-light": $blue-light,
+  "blue-dark": $blue-dark
+);
+
+// Type
+$font-family: 'Lato', Arial, "Helvetica Neue", sans-serif;
+
+// FontAwesome path
+$fa-font-path: "./fonts";
+
+// Nav
+$navbar-dark-color: $white;
+
+// Grid
+$container-max-widths: (
+  sm: 420px,
+  md: 720px,
+  lg: 1050px,
+  xl: 1200px
+);
+
+// Spancing
+$spacer: 1rem;
+$spacers: ();
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3),
+    6: ($spacer * 4),
+    7: ($spacer * 6),
+    8: ($spacer * 10)
+  ),
+  $spacers
+);

@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="{{ $.Site.Language.Lang }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>{{ $.Site.Title }}</title>
+    {{ $options := (dict "targetPath" "style.css" "outputStyle" "compressed" "enableSourceMap" false "includePaths" (slice "node_modules/assets/scss/main.scss")) }}
+    {{ $style := resources.Get "scss/main.scss" | resources.ToCSS $options }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ .Site.BaseURL }}/favicon.ico">
+  </head>
+  <body>
+    {{ block "main" . }}{{end}}
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </body>
+</html>

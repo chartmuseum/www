@@ -1,0 +1,120 @@
+{{ define "main" }}
+
+{{ block "header" . }}{{ partial "header" . }}{{end}}
+
+<section>
+  <div class="container my-5 my-lg-8">
+    <div class="row align-items-center">
+      <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+        {{ partial "svg/icon-animated.html" }}
+      </div>
+      <div class="col-12 col-lg-6">
+        <h1 class="mb-3 text-center text-lg-left">What is <span class="text-primary"><strong>ChartMuseum</strong></span>?</h1>
+        <p class="lead--lg">
+          ChartMuseum is an open-source
+          <a href="https://github.com/kubernetes/helm/blob/master/docs/chart_repository.md" target="_blank">Helm Chart Repository</a> written in Go (Golang), with support for cloud storage backends, including
+          <a href="https://cloud.google.com/storage" target="_blank">Google Cloud Storage</a>,
+          <a href="https://aws.amazon.com/s3" target="_blank">Amazon S3</a>,
+          <a href="https://azure.microsoft.com/en-us/services/storage/blobs" target="_blank">Microsoft Azure Blob Storage</a>,
+          <a href="https://www.alibabacloud.com/product/oss" target="_blank">Alibaba Cloud OSS Storage</a> and
+          <a href="https://developer.openstack.org/api-ref/object-store" target="_blank">Openstack Object Storage</a>.
+        </p>
+        <p class="lead text-blue-light">
+          ChartMuseum is a child project under the Helm umbrella, maintained primarily by <a href="https://codefresh.io" target="_blank">Codefresh</a>.
+        </p>
+        <div class="d-none d-md-flex mt-4">
+          <div>
+            <a class="github-button" href="{{ $.Site.Params.repo }}" data-size="large" data-show-count="true" aria-label="Star helm/chartmuseum on GitHub">Star</a>
+          </div>
+          <div class="my-3 my-md-0 mx-md-3">
+            <a class="github-button" href="{{ $.Site.Params.repo }}/subscription" data-size="large" data-show-count="true" aria-label="Watch helm/chartmuseum on GitHub">Watch</a>
+          </div>
+          <div>
+            <a class="github-button" href="{{ $.Site.Params.repo }}/fork" data-size="large" data-show-count="true" aria-label="Fork helm/chartmuseum on GitHub">Fork</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Quotes -->
+<section class="bg-light py-5 pt-lg-6 pb-lg-7">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-4">
+        <h1>What people are saying at <span class="text-primary"><strong>ChartMuseum</strong></span></h1>
+      </div>
+      <div class="col-12">
+        <div class="quotes__col">
+          <div class="quotes__card">
+            <blockquote class="lead text-blue-light">Finally!!</blockquote>
+          </div>
+          <div class="quotes__card">
+            <blockquote class="lead text-blue-light">ChartMuseum is awesome</blockquote>
+          </div>
+          <div class="quotes__card">
+            <blockquote class="lead text-blue-light">This is awesome!</blockquote>
+          </div>
+          <div class="quotes__card">
+            <blockquote class="lead text-blue-light">I was thinking about writing one of these up myself. This is perfect! thanks!</blockquote>
+          </div>
+          <div class="quotes__card">
+            <blockquote class="lead text-blue-light">Oh yes!!!! I’ve been waiting for this for so long. Makes life much easier, especially for the index.yaml creation!</blockquote>
+          </div>
+          <div class="quotes__card">
+            <blockquote class="lead text-blue-light">I am jumping for joy over ChartMuseum, a full-fledged Helm repository server with upload!</blockquote>
+          </div>
+          <div class="quotes__card">
+            <blockquote class="lead text-blue-light">Thanks for building the museum!</blockquote>
+          </div>
+          <div class="quotes__card">
+            <blockquote class="lead text-blue-light">This is really cool ... We currently have a process that generates the index file and then uploads, so this is
+              nice</blockquote>
+          </div>
+          <div class="quotes__card">
+            <blockquote class="lead text-blue-light">Really a good idea ... really really great, thanks again. I can use nginx to hold the repos and the museum to
+              add/delete the chart. That's a whole life cycle management of chart with the current helm</blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Instructions -->
+<section id="Instructions" class="pt-5">
+  <div class="container pb-5">
+    <div class="row mb-5 pb-md-4">
+      <div class="col">
+        <h1 class="text-white mb-0 instructions__title">Get ChartMuseum</h1>
+        <p class="text-secondary mb-3 font-weight-bold" style="margin-top: -8px; letter-spacing: 1px;">INSTRUCTIONS</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+        <i class="fas fa-terminal fa-lg text-secondary mb-2"></i>
+        <h3 class="text-white">Installation</h3>
+        <pre>
+<code class="language-bash">$ Chmod +x ./chartmuseum
+$ mv ./chartmuseum /usr/local/bin
+$ chartmuseum --help</code></pre>
+      </div>
+      <div class="col-12 col-lg-6">
+        <i class="fab fa-docker fa-lg text-secondary mb-2"></i>
+        <h3 class="text-white">with Docker</h3>
+        <pre><code class="language-docker"></code>$ docker run --rm -it \
+  -p 8080:8080 \
+  -v $(pwd)/charts:/charts \
+  -e DEBUG=true \
+  -e STORAGE=local \
+  -e STORAGE_LOCAL_ROOTDIR=/charts \
+  chartmuseum/chartmuseum:latest</code></pre>
+      </div>
+    </div>
+  </div>
+
+  {{ block "footer" . }}{{ partial "footer" . }}{{end}}
+
+</section>
+{{end}}
