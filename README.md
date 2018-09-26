@@ -1,5 +1,7 @@
 # ChartMuseum
 
+[![Codefresh build status]( https://g.codefresh.io/api/badges/pipeline/kubernetes-helm/codefresh-io%2Fchartmuseum-www%2Fchartmuseum-www?branch=master&type=cf-1)]( https://g.codefresh.io/repositories/codefresh-io/chartmuseum-www/builds?filter=trigger:build;branch:master;service:5babd0feb35f256491df1fb1~chartmuseum-www)
+
 Built with [Hugo](https://gohugo.io/).
 
 ## Usage
