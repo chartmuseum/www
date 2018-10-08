@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-	<meta name="generator" content="Hugo 0.46" />
+	<meta name="generator" content="Hugo 0.48" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="Description" content="Helm Chart Repository with support for Amazon S3, Google Cloud Storage, Microsoft Azure Blob Storage, Alibaba Cloud OSS Storage, and Openstack Object Storage.">
@@ -145,7 +145,7 @@
 $ mv ./chartmuseum /usr/local/bin
 $ chartmuseum --help</code></pre>
       </div>
-      <div class="col-12 col-lg-6">
+      <div class="col-12 col-lg-6 mb-4 mb-lg-0">
         <i class="fab fa-docker fa-lg text-secondary mb-2"></i>
         <h3 class="text-white">with Docker</h3>
         <pre><code class="language-docker"></code>$ docker run --rm -it \
@@ -155,6 +155,11 @@ $ chartmuseum --help</code></pre>
   -e STORAGE=local \
   -e STORAGE_LOCAL_ROOTDIR=/charts \
   chartmuseum/chartmuseum:latest</code></pre>
+      </div>
+      <div class="col-12 col-lg-6 hosted-version">
+        <i class="fas fa-cloud fa-lg text-secondary mb-2"></i>
+        <h3 class="text-white">Try a hosted version</h3>
+        <p class="text-lighter">Codefresh includes a free-to-use hosted version of ChartMuseum. <a class="text-secondary" href="https://codefresh.io/codefresh-signup/" target="_blank">Create a Codefresh account</a> to try it out.</p>
       </div>
     </div>
   </div>
