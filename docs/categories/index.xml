@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on ChartMuseum - Helm Chart Repository</title>
-    <link>https://codefresh-io.github.io/chartmuseum-www/categories/</link>
+    <link>https://chartmuseum.com/categories/</link>
     <description>Recent content in Categories on ChartMuseum - Helm Chart Repository</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    
-	<atom:link href="https://codefresh-io.github.io/chartmuseum-www/categories/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+
+	<atom:link href="https://chartmuseum.com/categories/index.xml" rel="self" type="application/rss+xml" />
+
+
   </channel>
 </rss>

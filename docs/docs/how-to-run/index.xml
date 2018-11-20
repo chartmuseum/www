@@ -2,155 +2,155 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>How to Run on ChartMuseum - Helm Chart Repository</title>
-    <link>https://codefresh-io.github.io/chartmuseum-www/docs/how-to-run/</link>
+    <link>https://chartmuseum.com/docs/how-to-run/</link>
     <description>Recent content in How to Run on ChartMuseum - Helm Chart Repository</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 06 Aug 2018 16:47:51 +0100</lastBuildDate>
-    
-	<atom:link href="https://codefresh-io.github.io/chartmuseum-www/docs/how-to-run/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+
+	<atom:link href="https://chartmuseum.com/docs/how-to-run/index.xml" rel="self" type="application/rss+xml" />
+
+
     <item>
       <title>Installation</title>
-      <link>https://codefresh-io.github.io/chartmuseum-www/docs/how-to-run/installation/</link>
+      <link>https://chartmuseum.com/docs/how-to-run/installation/</link>
       <pubDate>Mon, 06 Aug 2018 16:25:43 +0100</pubDate>
-      
-      <guid>https://codefresh-io.github.io/chartmuseum-www/docs/how-to-run/installation/</guid>
+
+      <guid>https://chartmuseum.com/docs/how-to-run/installation/</guid>
       <description>CLI Install the binary:
 # on Linux curl -LO https://s3.amazonaws.com/chartmuseum/release/latest/bin/linux/amd64/chartmuseum # on macOS curl -LO https://s3.amazonaws.com/chartmuseum/release/latest/bin/darwin/amd64/chartmuseum # on Windows curl -LO https://s3.amazonaws.com/chartmuseum/release/latest/bin/windows/amd64/chartmuseum chmod +x ./chartmuseum mv ./chartmuseum /usr/local/bin  Using latest in URLs above will get the latest binary (built from master branch).
 Replace latest with $(curl -s https://s3.amazonaws.com/chartmuseum/release/stable.txt) to automatically determine the latest stable release (e.g. v0.7.1).
 Determine your version with chartmuseum --version.</description>
     </item>
-    
+
     <item>
       <title>Configuration</title>
-      <link>https://codefresh-io.github.io/chartmuseum-www/docs/how-to-run/configuration/</link>
+      <link>https://chartmuseum.com/docs/how-to-run/configuration/</link>
       <pubDate>Mon, 06 Aug 2018 16:26:30 +0100</pubDate>
-      
-      <guid>https://codefresh-io.github.io/chartmuseum-www/docs/how-to-run/configuration/</guid>
+
+      <guid>https://chartmuseum.com/docs/how-to-run/configuration/</guid>
       <description>Show all CLI options with chartmuseum --help. Common configurations can be seen below.
 All command-line options can be specified as environment variables, which are defined by the command-line option, capitalized, with all -&amp;rsquo;s replaced with _&amp;rsquo;s.
 For example, the env var STORAGE_AMAZON_BUCKET can be used in place of --storage-amazon-bucket.</description>
     </item>
-    
+
     <item>
       <title>Using Amazon S3</title>
-      <link>https://codefresh-io.github.io/chartmuseum-www/docs/how-to-run/using-amazon-s3/</link>
+      <link>https://chartmuseum.com/docs/how-to-run/using-amazon-s3/</link>
       <pubDate>Mon, 06 Aug 2018 16:27:08 +0100</pubDate>
-      
-      <guid>https://codefresh-io.github.io/chartmuseum-www/docs/how-to-run/using-amazon-s3/</guid>
+
+      <guid>https://chartmuseum.com/docs/how-to-run/using-amazon-s3/</guid>
       <description>Make sure your environment is properly setup to access my-s3-bucket
 chartmuseum --debug --port=8080 \ --storage=&amp;quot;amazon&amp;quot; \ --storage-amazon-bucket=&amp;quot;my-s3-bucket&amp;quot; \ --storage-amazon-prefix=&amp;quot;&amp;quot; \ --storage-amazon-region=&amp;quot;us-east-1&amp;quot;  You need at least the following permissions inside your IAM Policy
 { &amp;quot;Version&amp;quot;: &amp;quot;2012-10-17&amp;quot;, &amp;quot;Statement&amp;quot;: [ { &amp;quot;Sid&amp;quot;: &amp;quot;AllowListObjects&amp;quot;, &amp;quot;Effect&amp;quot;: &amp;quot;Allow&amp;quot;, &amp;quot;Action&amp;quot;: [ &amp;quot;s3:ListBucket&amp;quot; ], &amp;quot;Resource&amp;quot;: &amp;quot;arn:aws:s3:::my-s3-bucket&amp;quot; }, { &amp;quot;Sid&amp;quot;: &amp;quot;AllowObjectsCRUD&amp;quot;, &amp;quot;Effect&amp;quot;: &amp;quot;Allow&amp;quot;, &amp;quot;Action&amp;quot;: [ &amp;quot;s3:DeleteObject&amp;quot;, &amp;quot;s3:GetObject&amp;quot;, &amp;quot;s3:PutObject&amp;quot; ], &amp;quot;Resource&amp;quot;: &amp;quot;arn:aws:s3:::my-s3-bucket/*&amp;quot; } ] }  </description>
     </item>
-    
+
     <item>
       <title>Using With Google Cloud Storage</title>
-      <link>https://codefresh-io.github.io/chartmuseum-www/docs/how-to-run/using-with-google-cloud-storage/</link>
+      <link>https://chartmuseum.com/docs/how-to-run/using-with-google-cloud-storage/</link>
       <pubDate>Mon, 06 Aug 2018 16:27:44 +0100</pubDate>
-      
-      <guid>https://codefresh-io.github.io/chartmuseum-www/docs/how-to-run/using-with-google-cloud-storage/</guid>
+
+      <guid>https://chartmuseum.com/docs/how-to-run/using-with-google-cloud-storage/</guid>
       <description>Make sure your environment is properly setup to access my-gcs-bucket.
 One way to do so is to set the GOOGLE_APPLICATION_CREDENTIALS var in your environment, pointing to the JSON file containing your service account key:
 export GOOGLE_APPLICATION_CREDENTIALS=&amp;quot;/home/user/Downloads/[FILE_NAME].json&amp;quot;  More info on Google Cloud authentication can be found here.
 chartmuseum --debug --port=8080 \ --storage=&amp;quot;google&amp;quot; \ --storage-google-bucket=&amp;quot;my-gcs-bucket&amp;quot; \ --storage-google-prefix=&amp;quot;&amp;quot;  </description>
     </item>
-    
+
     <item>
       <title>Using With Microsoft Azure Blob Storage</title>
-      <link>https://codefresh-io.github.io/chartmuseum-www/docs/how-to-run/using-with-microsoft-azure-blob-storage/</link>
+      <link>https://chartmuseum.com/docs/how-to-run/using-with-microsoft-azure-blob-storage/</link>
       <pubDate>Mon, 06 Aug 2018 16:28:34 +0100</pubDate>
-      
-      <guid>https://codefresh-io.github.io/chartmuseum-www/docs/how-to-run/using-with-microsoft-azure-blob-storage/</guid>
+
+      <guid>https://chartmuseum.com/docs/how-to-run/using-with-microsoft-azure-blob-storage/</guid>
       <description>Make sure your environment is properly setup to access mycontainer.
 To do so, you must set the following env vars: - AZURE_STORAGE_ACCOUNT - AZURE_STORAGE_ACCESS_KEY
 chartmuseum --debug --port=8080 \ --storage=&amp;quot;microsoft&amp;quot; \ --storage-microsoft-container=&amp;quot;mycontainer&amp;quot; \ --storage-microsoft-prefix=&amp;quot;&amp;quot;  </description>
     </item>
-    
+
     <item>
       <title>Using With Alibaba Cloud Oss Storage</title>
-      <link>https://codefresh-io.github.io/chartmuseum-www/docs/how-to-run/using-with-alibaba-cloud-oss-storage/</link>
+      <link>https://chartmuseum.com/docs/how-to-run/using-with-alibaba-cloud-oss-storage/</link>
       <pubDate>Mon, 06 Aug 2018 16:30:10 +0100</pubDate>
-      
-      <guid>https://codefresh-io.github.io/chartmuseum-www/docs/how-to-run/using-with-alibaba-cloud-oss-storage/</guid>
+
+      <guid>https://chartmuseum.com/docs/how-to-run/using-with-alibaba-cloud-oss-storage/</guid>
       <description>Make sure your environment is properly setup to access my-oss-bucket.
 To do so, you must set the following env vars: - ALIBABA_CLOUD_ACCESS_KEY_ID - ALIBABA_CLOUD_ACCESS_KEY_SECRET
 chartmuseum --debug --port=8080 \ --storage=&amp;quot;alibaba&amp;quot; \ --storage-alibaba-bucket=&amp;quot;my-oss-bucket&amp;quot; \ --storage-alibaba-prefix=&amp;quot;&amp;quot; \ --storage-alibaba-endpoint=&amp;quot;oss-cn-beijing.aliyuncs.com&amp;quot;  </description>
     </item>
-    
+
     <item>
       <title>Using With Openstack Object Storage</title>
-      <link>https://codefresh-io.github.io/chartmuseum-www/docs/how-to-run/using-with-openstack-object-storage/</link>
+      <link>https://chartmuseum.com/docs/how-to-run/using-with-openstack-object-storage/</link>
       <pubDate>Mon, 06 Aug 2018 16:43:57 +0100</pubDate>
-      
-      <guid>https://codefresh-io.github.io/chartmuseum-www/docs/how-to-run/using-with-openstack-object-storage/</guid>
+
+      <guid>https://chartmuseum.com/docs/how-to-run/using-with-openstack-object-storage/</guid>
       <description>Make sure your environment is properly setup to access mycontainer.
 To do so, you must set the following env vars (depending on your openstack version): - OS_AUTH_URL - either OS_PROJECT_NAME or OS_TENANT_NAME or OS_PROJECT_ID or OS_TENANT_ID - either OS_DOMAIN_NAME or OS_DOMAIN_ID - either OS_USERNAME or OS_USERID - OS_PASSWORD
 chartmuseum --debug --port=8080 \ --storage=&amp;quot;openstack&amp;quot; \ --storage-openstack-container=&amp;quot;mycontainer&amp;quot; \ --storage-openstack-prefix=&amp;quot;&amp;quot; \ --storage-openstack-region=&amp;quot;myregion&amp;quot;  </description>
     </item>
-    
+
     <item>
       <title>Using With Local Filesystem Storage</title>
-      <link>https://codefresh-io.github.io/chartmuseum-www/docs/how-to-run/using-with-local-filesystem-storage/</link>
+      <link>https://chartmuseum.com/docs/how-to-run/using-with-local-filesystem-storage/</link>
       <pubDate>Mon, 06 Aug 2018 16:44:27 +0100</pubDate>
-      
-      <guid>https://codefresh-io.github.io/chartmuseum-www/docs/how-to-run/using-with-local-filesystem-storage/</guid>
+
+      <guid>https://chartmuseum.com/docs/how-to-run/using-with-local-filesystem-storage/</guid>
       <description>Make sure you have read-write access to ./chartstorage (will create if doesn&amp;rsquo;t exist on first upload)
 chartmuseum --debug --port=8080 \ --storage=&amp;quot;local&amp;quot; \ --storage-local-rootdir=&amp;quot;./chartstorage&amp;quot;  </description>
     </item>
-    
+
     <item>
       <title>Basic Auth</title>
-      <link>https://codefresh-io.github.io/chartmuseum-www/docs/how-to-run/basic-auth/</link>
+      <link>https://chartmuseum.com/docs/how-to-run/basic-auth/</link>
       <pubDate>Mon, 06 Aug 2018 16:44:49 +0100</pubDate>
-      
-      <guid>https://codefresh-io.github.io/chartmuseum-www/docs/how-to-run/basic-auth/</guid>
+
+      <guid>https://chartmuseum.com/docs/how-to-run/basic-auth/</guid>
       <description>If both of the following options are provided, basic http authentication will protect all routes: - --basic-auth-user=&amp;lt;user&amp;gt; - username for basic http authentication - --basic-auth-pass=&amp;lt;pass&amp;gt; - password for basic http authentication
 You may want basic auth to only be applied to operations that can change Charts, i.e. PUT, POST and DELETE. So to avoid basic auth on GET operations use
  --auth-anonymous-get - allow anonymous GET operations  </description>
     </item>
-    
+
     <item>
       <title>HTTPS</title>
-      <link>https://codefresh-io.github.io/chartmuseum-www/docs/how-to-run/https/</link>
+      <link>https://chartmuseum.com/docs/how-to-run/https/</link>
       <pubDate>Mon, 06 Aug 2018 16:45:01 +0100</pubDate>
-      
-      <guid>https://codefresh-io.github.io/chartmuseum-www/docs/how-to-run/https/</guid>
+
+      <guid>https://chartmuseum.com/docs/how-to-run/https/</guid>
       <description>If both of the following options are provided, the server will listen and serve HTTPS: - --tls-cert=&amp;lt;crt&amp;gt; - path to tls certificate chain file - --tls-key=&amp;lt;key&amp;gt; - path to tls key file</description>
     </item>
-    
+
     <item>
       <title>Other Cli Options</title>
-      <link>https://codefresh-io.github.io/chartmuseum-www/docs/how-to-run/other-cli-options/</link>
+      <link>https://chartmuseum.com/docs/how-to-run/other-cli-options/</link>
       <pubDate>Mon, 06 Aug 2018 16:45:13 +0100</pubDate>
-      
-      <guid>https://codefresh-io.github.io/chartmuseum-www/docs/how-to-run/other-cli-options/</guid>
+
+      <guid>https://chartmuseum.com/docs/how-to-run/other-cli-options/</guid>
       <description> --log-json - output structured logs as json --disable-api - disable all routes prefixed with /api --disable-statefiles - disable use of index-cache.yaml --allow-overwrite - allow chart versions to be re-uploaded without ?force querystring --disable-force-overwrite - do not allow chart versions to be re-uploaded, even with ?force querystring --chart-url=&amp;lt;url&amp;gt; - absolute url for .tgzs in index.yaml --storage-amazon-endpoint=&amp;lt;endpoint&amp;gt; - alternative s3 endpoint --storage-amazon-sse=&amp;lt;algorithm&amp;gt; - s3 server side encryption algorithm --storage-openstack-cacert=&amp;lt;path&amp;gt; - path to a custom ca certificates bundle for openstack --chart-post-form-field-name=&amp;lt;field&amp;gt; - form field which will be queried for the chart file content --prov-post-form-field-name=&amp;lt;field&amp;gt; - form field which will be queried for the provenance file content --index-limit=&amp;lt;number&amp;gt; - limit the number of parallel indexers --context-path=&amp;lt;path&amp;gt; - base context path (new root for application routes) --depth=&amp;lt;number&amp;gt; - levels of nested repos for multitenancy  </description>
     </item>
-    
+
     <item>
       <title>Docker Image</title>
-      <link>https://codefresh-io.github.io/chartmuseum-www/docs/how-to-run/docker-image/</link>
+      <link>https://chartmuseum.com/docs/how-to-run/docker-image/</link>
       <pubDate>Mon, 06 Aug 2018 16:46:50 +0100</pubDate>
-      
-      <guid>https://codefresh-io.github.io/chartmuseum-www/docs/how-to-run/docker-image/</guid>
+
+      <guid>https://chartmuseum.com/docs/how-to-run/docker-image/</guid>
       <description>Available via Docker Hub.
 Example usage (S3):
 docker run --rm -it \ -p 8080:8080 \ -e PORT=8080 \ -e DEBUG=1 \ -e STORAGE=&amp;quot;amazon&amp;quot; \ -e STORAGE_AMAZON_BUCKET=&amp;quot;my-s3-bucket&amp;quot; \ -e STORAGE_AMAZON_PREFIX=&amp;quot;&amp;quot; \ -e STORAGE_AMAZON_REGION=&amp;quot;us-east-1&amp;quot; \ -v ~/.aws:/root/.aws:ro \ chartmuseum/chartmuseum:latest  </description>
     </item>
-    
+
     <item>
       <title>Helm Chart</title>
-      <link>https://codefresh-io.github.io/chartmuseum-www/docs/how-to-run/helm-chart/</link>
+      <link>https://chartmuseum.com/docs/how-to-run/helm-chart/</link>
       <pubDate>Mon, 06 Aug 2018 16:47:03 +0100</pubDate>
-      
-      <guid>https://codefresh-io.github.io/chartmuseum-www/docs/how-to-run/helm-chart/</guid>
+
+      <guid>https://chartmuseum.com/docs/how-to-run/helm-chart/</guid>
       <description>There is a Helm chart for ChartMuseum itself which can be found in the official Kubernetes Charts repository.
 You can also view it on Kubeapps Hub.
 To install:
 helm repo add stable https://kubernetes-charts.storage.googleapis.com helm install stable/chartmuseum  If interested in making changes, please submit a PR to kubernetes/charts. Before doing any work, please check for any currently open pull requests. Thanks!</description>
     </item>
-    
+
   </channel>
 </rss>

@@ -2,41 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>API on ChartMuseum - Helm Chart Repository</title>
-    <link>https://codefresh-io.github.io/chartmuseum-www/docs/api/</link>
+    <link>https://chartmuseum.com/docs/api/</link>
     <description>Recent content in API on ChartMuseum - Helm Chart Repository</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 28 Jan 2018 22:01:36 +0100</lastBuildDate>
-    
-	<atom:link href="https://codefresh-io.github.io/chartmuseum-www/docs/api/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+
+	<atom:link href="https://chartmuseum.com/docs/api/index.xml" rel="self" type="application/rss+xml" />
+
+
     <item>
       <title>Helm Chart Repository</title>
-      <link>https://codefresh-io.github.io/chartmuseum-www/docs/api/helm-chart-repository/</link>
+      <link>https://chartmuseum.com/docs/api/helm-chart-repository/</link>
       <pubDate>Mon, 06 Aug 2018 14:48:59 +0100</pubDate>
-      
-      <guid>https://codefresh-io.github.io/chartmuseum-www/docs/api/helm-chart-repository/</guid>
+
+      <guid>https://chartmuseum.com/docs/api/helm-chart-repository/</guid>
       <description> GET /index.yaml - retrieved when you run helm repo add chartmuseum http://localhost:8080/ GET /charts/mychart-0.1.0.tgz - retrieved when you run helm install chartmuseum/mychart GET /charts/mychart-0.1.0.tgz.prov - retrieved when you run helm install with the --verify flag  </description>
     </item>
-    
+
     <item>
       <title>Chart Manipulation</title>
-      <link>https://codefresh-io.github.io/chartmuseum-www/docs/api/chart-manipulation/</link>
+      <link>https://chartmuseum.com/docs/api/chart-manipulation/</link>
       <pubDate>Mon, 06 Aug 2018 14:49:16 +0100</pubDate>
-      
-      <guid>https://codefresh-io.github.io/chartmuseum-www/docs/api/chart-manipulation/</guid>
+
+      <guid>https://chartmuseum.com/docs/api/chart-manipulation/</guid>
       <description> POST /api/charts - upload a new chart version POST /api/prov - upload a new provenance file DELETE /api/charts/&amp;lt;name&amp;gt;/&amp;lt;version&amp;gt; - delete a chart version (and corresponding provenance file) GET /api/charts - list all charts GET /api/charts/&amp;lt;name&amp;gt; - list all versions of a chart GET /api/charts/&amp;lt;name&amp;gt;/&amp;lt;version&amp;gt; - describe a chart version  </description>
     </item>
-    
+
     <item>
       <title>Server Info</title>
-      <link>https://codefresh-io.github.io/chartmuseum-www/docs/api/server-info/</link>
+      <link>https://chartmuseum.com/docs/api/server-info/</link>
       <pubDate>Mon, 06 Aug 2018 14:49:38 +0100</pubDate>
-      
-      <guid>https://codefresh-io.github.io/chartmuseum-www/docs/api/server-info/</guid>
+
+      <guid>https://chartmuseum.com/docs/api/server-info/</guid>
       <description> GET / - HTML welcome page GET /health - returns 200 OK  </description>
     </item>
-    
+
   </channel>
 </rss>

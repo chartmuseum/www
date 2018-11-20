@@ -6,13 +6,13 @@
     <meta name="Description" content="Helm Chart Repository with support for Amazon S3, Google Cloud Storage, Microsoft Azure Blob Storage, Alibaba Cloud OSS Storage, and Openstack Object Storage.">
     <meta name="theme-color" content="#326ce6"/>
     <title>ChartMuseum - Helm Chart Repository</title>
-    
-    
-    <link rel="stylesheet" href="https://codefresh-io.github.io/chartmuseum-www/style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="https://codefresh-io.github.io/chartmuseum-www/favicon.ico">
+
+
+    <link rel="stylesheet" href="https://chartmuseum.com/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="https://chartmuseum.com/favicon.ico">
   </head>
   <body>
-    
+
 <div class="container-fluid docs">
  <div class="sidebar__wrapper">
   <div class="sidebar">
@@ -26,94 +26,94 @@
     </div>
     <nav class="py-4">
   <ul class="nav flex-column">
-    
-      
-        
+
+
+
 <a class="nav__link acrd__item" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">API</a>
 <ul class="nav flex-column submenu close">
-  
-  
+
+
     <a class="nav__link" role="button" href="#helm-chart-repository">Helm Chart Repository</a>
-  
+
     <a class="nav__link" role="button" href="#chart-manipulation">Chart Manipulation</a>
-  
+
     <a class="nav__link" role="button" href="#server-info">Server Info</a>
-  
+
 </ul>
 
 
-      
-        
+
+
 <a class="nav__link" role="button" href="#uploading-a-chart-package">Uploading a Chart Package</a>
 
 
-      
-        
+
+
 <a class="nav__link" role="button" href="#installing-chartsinto-kubernetes">Installing Charts into Kubernetes</a>
 
 
-      
-        
+
+
 <a class="nav__link acrd__item" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">How to Run</a>
 <ul class="nav flex-column submenu close">
-  
-  
+
+
     <a class="nav__link" role="button" href="#installation">Installation</a>
-  
+
     <a class="nav__link" role="button" href="#configuration">Configuration</a>
-  
+
     <a class="nav__link" role="button" href="#using-amazon-s3">Using Amazon S3</a>
-  
+
     <a class="nav__link" role="button" href="#using-with-google-cloud-storage">Using With Google Cloud Storage</a>
-  
+
     <a class="nav__link" role="button" href="#using-with-microsoft-azure-blob-storage">Using With Microsoft Azure Blob Storage</a>
-  
+
     <a class="nav__link" role="button" href="#using-with-alibaba-cloud-oss-storage">Using With Alibaba Cloud Oss Storage</a>
-  
+
     <a class="nav__link" role="button" href="#using-with-openstack-object-storage">Using With Openstack Object Storage</a>
-  
+
     <a class="nav__link" role="button" href="#using-with-local-filesystem-storage">Using With Local Filesystem Storage</a>
-  
+
     <a class="nav__link" role="button" href="#basic-auth">Basic Auth</a>
-  
+
     <a class="nav__link" role="button" href="#https">HTTPS</a>
-  
+
     <a class="nav__link" role="button" href="#other-cli-options">Other Cli Options</a>
-  
+
     <a class="nav__link" role="button" href="#docker-image">Docker Image</a>
-  
+
     <a class="nav__link" role="button" href="#helm-chart">Helm Chart</a>
-  
+
 </ul>
 
 
-      
-        
+
+
 <a class="nav__link" role="button" href="#multitenancy">Multitenancy</a>
 
 
-      
-        
+
+
 <a class="nav__link" role="button" href="#cache">Cache</a>
 
 
-      
-        
+
+
 <a class="nav__link" role="button" href="#prometheus-metrics">Prometheus Metrics</a>
 
 
-      
-        
+
+
 <a class="nav__link" role="button" href="#notes-on-index.yaml">Notes on index.yaml</a>
 
 
-      
-        
+
+
 <a class="nav__link" role="button" href="#mirroring-the-official-kubernetes-repositories">Mirroring the Official Kubernetes Repositories</a>
 
 
-      
-    
+
+
   </ul>
 </nav>
 
@@ -129,22 +129,22 @@
       <div class="row my-4 align-items-center justify-content-md-center">
         <div class="col-12 col-md-10 d-flex">
           <nav class="nav ml-auto">
-            <a class="nav-link" href="https://codefresh-io.github.io/chartmuseum-www"><i class="fas fa-home mr-2"></i>ChartMuseum</a>
+            <a class="nav-link" href="https://chartmuseum.com"><i class="fas fa-home mr-2"></i>ChartMuseum</a>
             <a class="nav-link pr-0" target="_blank" href="https://github.com/helm/chartmuseum"><i class="fab fa-github mr-2"></i>GitHub</a>
           </nav>
         </div>
       </div>
       <div class="row mt-4 justify-content-md-center">
-        
-        
-          
+
+
+
 <section class="col-12 col-md-10 pt-5" id="api">
   <h1 class="text-uppercase section__title"><a href="#api">API</a></h1>
-  
+
 </section>
 
-  
-  
+
+
     <section class="col-12 col-md-10 pt-7 pt-lg-5 mb-5" id="helm-chart-repository">
   <h3 class="mb-3 text-uppercase"><a class="section__tittle__link" href="#helm-chart-repository">Helm Chart Repository</a></h3>
   <ul>
@@ -155,7 +155,7 @@
 
 </section>
 
-  
+
     <section class="col-12 col-md-10 pt-7 pt-lg-5 mb-5" id="chart-manipulation">
   <h3 class="mb-3 text-uppercase"><a class="section__tittle__link" href="#chart-manipulation">Chart Manipulation</a></h3>
   <ul>
@@ -169,7 +169,7 @@
 
 </section>
 
-  
+
     <section class="col-12 col-md-10 pt-7 pt-lg-5 mb-5" id="server-info">
   <h3 class="mb-3 text-uppercase"><a class="section__tittle__link" href="#server-info">Server Info</a></h3>
   <ul>
@@ -179,11 +179,11 @@
 
 </section>
 
-  
 
 
-        
-          
+
+
+
   <section class="col-12 col-md-10 pt-7 pt-lg-5 mb-5" id="uploading-a-chart-package">
   <h3 class="mb-3 text-uppercase"><a class="section__tittle__link" href="#uploading-a-chart-package">Uploading a Chart Package</a></h3>
   <p><sub>*Follow <strong>&ldquo;How to Run&rdquo;</strong> section below to get ChartMuseum up and running at ht<span>tp:/</span>/localhost:8080*<sub></p>
@@ -218,8 +218,8 @@ helm package .
 
 
 
-        
-          
+
+
   <section class="col-12 col-md-10 pt-7 pt-lg-5 mb-5" id="installing-chartsinto-kubernetes">
   <h3 class="mb-3 text-uppercase"><a class="section__tittle__link" href="#installing-chartsinto-kubernetes">Installing Charts into Kubernetes</a></h3>
   <p>Add the URL to your <em>ChartMuseum</em> installation to the local repository list:</p>
@@ -241,18 +241,18 @@ helm package .
 
 
 
-        
-          
+
+
 <section class="col-12 col-md-10 pt-5" id="how-to-run">
   <h1 class="text-uppercase section__title"><a href="#how-to-run">How to Run</a></h1>
-  
+
 </section>
 
-  
-  
+
+
     <section class="col-12 col-md-10 pt-7 pt-lg-5 mb-5" id="installation">
   <h3 class="mb-3 text-uppercase"><a class="section__tittle__link" href="#installation">Installation</a></h3>
-  
+
 
 <h3 id="cli">CLI</h3>
 
@@ -279,7 +279,7 @@ mv ./chartmuseum /usr/local/bin
 
 </section>
 
-  
+
     <section class="col-12 col-md-10 pt-7 pt-lg-5 mb-5" id="configuration">
   <h3 class="mb-3 text-uppercase"><a class="section__tittle__link" href="#configuration">Configuration</a></h3>
   <p>Show all CLI options with <code>chartmuseum --help</code>. Common configurations can be seen below.</p>
@@ -290,7 +290,7 @@ mv ./chartmuseum /usr/local/bin
 
 </section>
 
-  
+
     <section class="col-12 col-md-10 pt-7 pt-lg-5 mb-5" id="using-amazon-s3">
   <h3 class="mb-3 text-uppercase"><a class="section__tittle__link" href="#using-amazon-s3">Using Amazon S3</a></h3>
   <p>Make sure your environment is properly setup to access <code>my-s3-bucket</code></p>
@@ -331,7 +331,7 @@ mv ./chartmuseum /usr/local/bin
 
 </section>
 
-  
+
     <section class="col-12 col-md-10 pt-7 pt-lg-5 mb-5" id="using-with-google-cloud-storage">
   <h3 class="mb-3 text-uppercase"><a class="section__tittle__link" href="#using-with-google-cloud-storage">Using With Google Cloud Storage</a></h3>
   <p>Make sure your environment is properly setup to access <code>my-gcs-bucket</code>.</p>
@@ -351,7 +351,7 @@ mv ./chartmuseum /usr/local/bin
 
 </section>
 
-  
+
     <section class="col-12 col-md-10 pt-7 pt-lg-5 mb-5" id="using-with-microsoft-azure-blob-storage">
   <h3 class="mb-3 text-uppercase"><a class="section__tittle__link" href="#using-with-microsoft-azure-blob-storage">Using With Microsoft Azure Blob Storage</a></h3>
   <p>Make sure your environment is properly setup to access <code>mycontainer</code>.</p>
@@ -368,7 +368,7 @@ mv ./chartmuseum /usr/local/bin
 
 </section>
 
-  
+
     <section class="col-12 col-md-10 pt-7 pt-lg-5 mb-5" id="using-with-alibaba-cloud-oss-storage">
   <h3 class="mb-3 text-uppercase"><a class="section__tittle__link" href="#using-with-alibaba-cloud-oss-storage">Using With Alibaba Cloud Oss Storage</a></h3>
   <p>Make sure your environment is properly setup to access <code>my-oss-bucket</code>.</p>
@@ -386,7 +386,7 @@ mv ./chartmuseum /usr/local/bin
 
 </section>
 
-  
+
     <section class="col-12 col-md-10 pt-7 pt-lg-5 mb-5" id="using-with-openstack-object-storage">
   <h3 class="mb-3 text-uppercase"><a class="section__tittle__link" href="#using-with-openstack-object-storage">Using With Openstack Object Storage</a></h3>
   <p>Make sure your environment is properly setup to access <code>mycontainer</code>.</p>
@@ -407,7 +407,7 @@ mv ./chartmuseum /usr/local/bin
 
 </section>
 
-  
+
     <section class="col-12 col-md-10 pt-7 pt-lg-5 mb-5" id="using-with-local-filesystem-storage">
   <h3 class="mb-3 text-uppercase"><a class="section__tittle__link" href="#using-with-local-filesystem-storage">Using With Local Filesystem Storage</a></h3>
   <p>Make sure you have read-write access to <code>./chartstorage</code> (will create if doesn&rsquo;t exist on first upload)</p>
@@ -419,7 +419,7 @@ mv ./chartmuseum /usr/local/bin
 
 </section>
 
-  
+
     <section class="col-12 col-md-10 pt-7 pt-lg-5 mb-5" id="basic-auth">
   <h3 class="mb-3 text-uppercase"><a class="section__tittle__link" href="#basic-auth">Basic Auth</a></h3>
   <p>If both of the following options are provided, basic http authentication will protect all routes:
@@ -434,7 +434,7 @@ mv ./chartmuseum /usr/local/bin
 
 </section>
 
-  
+
     <section class="col-12 col-md-10 pt-7 pt-lg-5 mb-5" id="https">
   <h3 class="mb-3 text-uppercase"><a class="section__tittle__link" href="#https">HTTPS</a></h3>
   <p>If both of the following options are provided, the server will listen and serve HTTPS:
@@ -443,7 +443,7 @@ mv ./chartmuseum /usr/local/bin
 
 </section>
 
-  
+
     <section class="col-12 col-md-10 pt-7 pt-lg-5 mb-5" id="other-cli-options">
   <h3 class="mb-3 text-uppercase"><a class="section__tittle__link" href="#other-cli-options">Other Cli Options</a></h3>
   <ul>
@@ -465,7 +465,7 @@ mv ./chartmuseum /usr/local/bin
 
 </section>
 
-  
+
     <section class="col-12 col-md-10 pt-7 pt-lg-5 mb-5" id="docker-image">
   <h3 class="mb-3 text-uppercase"><a class="section__tittle__link" href="#docker-image">Docker Image</a></h3>
   <p>Available via <a href="https://hub.docker.com/r/chartmuseum/chartmuseum/">Docker Hub</a>.</p>
@@ -486,7 +486,7 @@ mv ./chartmuseum /usr/local/bin
 
 </section>
 
-  
+
     <section class="col-12 col-md-10 pt-7 pt-lg-5 mb-5" id="helm-chart">
   <h3 class="mb-3 text-uppercase"><a class="section__tittle__link" href="#helm-chart">Helm Chart</a></h3>
   <p>There is a <a href="https://github.com/kubernetes/charts/tree/master/stable/chartmuseum">Helm chart for <em>ChartMuseum</em></a> itself which can be found in the official Kubernetes Charts repository.</p>
@@ -503,11 +503,11 @@ helm install stable/chartmuseum
 
 </section>
 
-  
 
 
-        
-          
+
+
+
   <section class="col-12 col-md-10 pt-7 pt-lg-5 mb-5" id="multitenancy">
   <h3 class="mb-3 text-uppercase"><a class="section__tittle__link" href="#multitenancy">Multitenancy</a></h3>
   <p>Multitenancy is supported with the <code>--depth</code> flag.</p>
@@ -545,11 +545,11 @@ helm install stable/chartmuseum
 
 
 
-        
-          
+
+
   <section class="col-12 col-md-10 pt-7 pt-lg-5 mb-5" id="cache">
   <h3 class="mb-3 text-uppercase"><a class="section__tittle__link" href="#cache">Cache</a></h3>
-  
+
 
 <p>By default, the contents of <code>index.yaml</code> (per-tenant) will be stored in memory. This means that memory usage will continue to grow indefinitely as more charts are added to storage.</p>
 
@@ -572,8 +572,8 @@ helm install stable/chartmuseum
 
 
 
-        
-          
+
+
   <section class="col-12 col-md-10 pt-7 pt-lg-5 mb-5" id="prometheus-metrics">
   <h3 class="mb-3 text-uppercase"><a class="section__tittle__link" href="#prometheus-metrics">Prometheus Metrics</a></h3>
   <p>ChartMuseum exposes its <a href="https://prometheus.io/docs/concepts/metric_types/">Prometheus metrics</a> at the <code>/metrics</code> route on the main port. This can be disabled with the <code>--disable-metrics</code> command-line flag or the <code>DISABLE_METRICS</code> environment variable.</p>
@@ -703,8 +703,8 @@ have repo labels named <code>org1/repoa</code> and <code>org2/repob</code>.</p>
 
 
 
-        
-          
+
+
   <section class="col-12 col-md-10 pt-7 pt-lg-5 mb-5" id="notes-on-index.yaml">
   <h3 class="mb-3 text-uppercase"><a class="section__tittle__link" href="#notes-on-index.yaml">Notes on index.yaml</a></h3>
   <p>The repository index (index.yaml) is dynamically generated based on packages found in storage. If you store your own version of index.yaml, it will be completely ignored.</p>
@@ -723,8 +723,8 @@ have repo labels named <code>org1/repoa</code> and <code>org2/repob</code>.</p>
 
 
 
-        
-          
+
+
   <section class="col-12 col-md-10 pt-7 pt-lg-5 mb-5" id="mirroring-the-official-kubernetes-repositories">
   <h3 class="mb-3 text-uppercase"><a class="section__tittle__link" href="#mirroring-the-official-kubernetes-repositories">Mirroring the Official Kubernetes Repositories</a></h3>
   <p>Please see <code>scripts/mirror_k8s_repos.sh</code> for an example of how to download all .tgz packages from the official Kubernetes repositories (both stable and incubator).</p>
@@ -739,14 +739,14 @@ chartmuseum --debug --port=8080 --storage=&quot;local&quot; --storage-local-root
 
 
 
-        
-        
+
+
       </div>
     </div>
   </main>
 </div>
 
-<script type="text/javascript" src="https://codefresh-io.github.io/chartmuseum-www/js/docs.min.js"></script>
+<script type="text/javascript" src="https://chartmuseum.com/js/docs.min.js"></script>
 
     <script async defer src="https://buttons.github.io/buttons.js"></script>
   </body>

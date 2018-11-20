@@ -1,4 +1,4 @@
-baseURL = "https://codefresh-io.github.io/chartmuseum-www"
+baseURL = "https://chartmuseum.com"
 publishDir = "docs"
 languageCode = "en-us"
 languageLang = "en"
