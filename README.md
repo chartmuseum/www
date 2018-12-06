@@ -41,7 +41,3 @@ To get a preview of the content not yet published, run:
 ```bash
 hugo -D
 ```
-
-### Deploying
-
-The site is automatically deployed when commits land in `/docs` folder in the `master` branch, hosted by GitHub pages.
