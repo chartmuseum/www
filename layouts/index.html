@@ -93,23 +93,21 @@
     </div>
     <div class="row">
       <div class="col-12 col-lg-6 mb-4 mb-lg-0">
-        <i class="fas fa-terminal fa-lg text-secondary mb-2"></i>
-        <h3 class="text-white">Installation</h3>
-        <pre>
-<code class="language-bash">$ Chmod +x ./chartmuseum
-$ mv ./chartmuseum /usr/local/bin
-$ chartmuseum --help</code></pre>
+        <!--<i class="fas fa-terminal fa-lg text-secondary mb-2"></i>-->
+        <span id="gofish">🐠</span>
+        <h3 class="text-white">with <a id="gofish-link" target="_blank" href="https://gofi.sh">GoFish</a></h3>
+        <pre><code class="language-bash">gofish install chartmuseum</code></pre>
       </div>
       <div class="col-12 col-lg-6 mb-4 mb-lg-0">
         <i class="fab fa-docker fa-lg text-secondary mb-2"></i>
         <h3 class="text-white">with Docker</h3>
-        <pre><code class="language-docker"></code>$ docker run --rm -it \
+        <pre><code class="language-docker"></code>docker run --rm -it \
   -p 8080:8080 \
   -v $(pwd)/charts:/charts \
   -e DEBUG=true \
   -e STORAGE=local \
   -e STORAGE_LOCAL_ROOTDIR=/charts \
-  chartmuseum/chartmuseum:latest</code></pre>
+  chartmuseum/chartmuseum:v0.8.0</code></pre>
       </div>
       <div class="col-12 col-lg-6 hosted-version">
         <i class="fas fa-cloud fa-lg text-secondary mb-2"></i>
