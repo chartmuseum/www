@@ -8,6 +8,17 @@ draft: false
 
 Available via [Docker Hub](https://hub.docker.com/r/chartmuseum/chartmuseum/).
 
+Example usage (local storage):
+```bash
+docker run --rm -it \
+  -p 8080:8080 \
+  -e DEBUG=1 \
+  -e STORAGE=local \
+  -e STORAGE_LOCAL_ROOTDIR=/charts \
+  -v $(pwd)/charts:/charts \
+  chartmuseum/chartmuseum:latest
+```
+
 Example usage (S3):
 ```bash
 docker run --rm -it \
