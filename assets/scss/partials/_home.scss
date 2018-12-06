@@ -65,6 +65,7 @@
     }
   }
 
+  /*
   &:nth-child(2n + 3) blockquote::before {
     content: "\f281";
     font-family: "Font Awesome 5 Brands";
@@ -74,6 +75,7 @@
     content: "\f099";
     font-family: "Font Awesome 5 Brands";
   }
+  */
 }
 
 @include media-breakpoint-up(md) {
