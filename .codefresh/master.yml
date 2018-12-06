@@ -2,6 +2,7 @@
 #
 # 	S3_BUCKET
 # 	AWS_DEFAULT_REGION
+# 	AWS_CLOUDFRONT_DISTRIBUTION_ID
 # 	AWS_ACCESS_KEY_ID (encrypted)
 # 	AWS_SECRET_ACCESS_KEY (encrypted)
 #
@@ -16,3 +17,4 @@ steps:
     image: xueshanf/awscli:latest
     commands:
       - aws s3 cp docs/ s3://${S3_BUCKET} --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers --recursive
+      - aws cloudfront create-invalidation --distribution-id ${AWS_CLOUDFRONT_DISTRIBUTION_ID} --paths index.html
