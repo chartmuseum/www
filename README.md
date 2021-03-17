@@ -1,5 +1,7 @@
 # ChartMuseum
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d126af9a-b300-4730-87b2-381fdeea6853/deploy-status)](https://app.netlify.com/sites/gracious-euclid-64e975/deploys)
+
 Built with [Hugo](https://gohugo.io/).
 
 ## Usage
