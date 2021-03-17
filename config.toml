@@ -1,5 +1,5 @@
 baseURL = "https://chartmuseum.com"
-publishDir = "docs"
+publishdir = "app"
 languageCode = "en-us"
 languageLang = "en"
 title = "ChartMuseum - Helm Chart Repository"
