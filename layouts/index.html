@@ -20,7 +20,7 @@
           <a href="https://developer.openstack.org/api-ref/object-store" target="_blank">Openstack Object Storage</a>.
         </p>
         <p class="lead text-blue-light">
-          ChartMuseum is a child project under the Helm umbrella, maintained primarily by <a href="https://codefresh.io" target="_blank">Codefresh</a>.
+          ChartMuseum is a child project under the Helm umbrella.
         </p>
         <div class="d-none d-md-flex mt-4">
           <div>
@@ -98,21 +98,19 @@
         <h3 class="text-white">with <a id="gofish-link" target="_blank" href="https://gofi.sh">GoFish</a></h3>
         <pre><code class="language-bash">gofish install chartmuseum</code></pre>
         <span id="bash">🐮</span>
-        <h3 class="text-white">with bash</h3>
-        <pre><code class="language-bash"># or you can use the installer script
-curl https://raw.githubusercontent.com/helm/chartmuseum/main/scripts/get-chartmuseum | bash
-</code></pre>
+        <h3 class="text-white">with Bash</h3>
+        <pre><code class="language-bash">curl https://raw.githubusercontent.com/helm/chartmuseum/main/scripts/get-chartmuseum | bash</code></pre>
       </div>
       <div class="col-12 col-lg-6 mb-4 mb-lg-0">
         <i class="fab fa-docker fa-lg text-secondary mb-2"></i>
         <h3 class="text-white">with Docker</h3>
-        <pre><code class="language-docker"></code>$ docker run --rm -it \
+        <pre><code class="language-docker"></code>docker run --rm -it \
   -p 8080:8080 \
   -e DEBUG=1 \
   -e STORAGE=local \
   -e STORAGE_LOCAL_ROOTDIR=/charts \
   -v $(pwd)/charts:/charts \
-  ghcr.io/helm/chartmuseum:v0.13.0</code></pre>
+  ghcr.io/helm/chartmuseum:v0.13.1</code></pre>
       </div>
     </div>
   </div>

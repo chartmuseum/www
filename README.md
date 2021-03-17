@@ -1,7 +1,5 @@
 # ChartMuseum
 
-[![Codefresh build status]( https://g.codefresh.io/api/badges/pipeline/chartmuseum/chartmuseum%2Fwww%2Fmaster?type=cf-1)]( https://g.codefresh.io/public/accounts/chartmuseum/pipelines/chartmuseum/www/master)
-
 Built with [Hugo](https://gohugo.io/).
 
 ## Usage

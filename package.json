@@ -1,20 +1,20 @@
 {
   "name": "chartmuseum",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Helm Chart Repository with support for Amazon S3, Google Cloud Storage, Microsoft Azure Blob Storage, Alibaba Cloud OSS Storage, and Openstack Object Storage",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/codefresh-io/chartmuseum-www.git"
+    "url": "git+https://github.com/chartmuseum/www.git"
   },
-  "author": "Thiago Solcia",
+  "author": "The Helm Maintainers",
   "bugs": {
-    "url": "https://github.com/codefresh-io/chartmuseum-www/issues"
+    "url": "https://github.com/chartmuseum/www/issues"
   },
-  "homepage": "https://github.com/codefresh-io/chartmuseum-www#readme",
+  "homepage": "https://github.com/chartmuseum/www",
   "dependencies": {
-    "bootstrap": "^4.4.1"
+    "bootstrap": "^4.6.0"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.2.0"
+    "@fortawesome/fontawesome-free": "^5.15.3"
   }
 }
