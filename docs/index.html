@@ -141,25 +141,18 @@
         <i class="fas fa-terminal fa-lg text-secondary mb-2"></i>
         <h3 class="text-white">Installation</h3>
         <pre>
-<code class="language-bash">$ Chmod +x ./chartmuseum
-$ mv ./chartmuseum /usr/local/bin
-$ chartmuseum --help</code></pre>
+<code class="language-bash">$curl https://raw.githubusercontent.com/helm/chartmuseum/main/scripts/get-chartmuseum | bash</code></pre>
       </div>
       <div class="col-12 col-lg-6 mb-4 mb-lg-0">
         <i class="fab fa-docker fa-lg text-secondary mb-2"></i>
-        <h3 class="text-white">with Docker</h3>
+        <h3 class="text-white">with Docker(local)</h3>
         <pre><code class="language-docker"></code>$ docker run --rm -it \
   -p 8080:8080 \
-  -v $(pwd)/charts:/charts \
-  -e DEBUG=true \
+  -e DEBUG=1 \
   -e STORAGE=local \
   -e STORAGE_LOCAL_ROOTDIR=/charts \
-  chartmuseum/chartmuseum:latest</code></pre>
-      </div>
-      <div class="col-12 col-lg-6 hosted-version">
-        <i class="fas fa-cloud fa-lg text-secondary mb-2"></i>
-        <h3 class="text-white">Try a hosted version</h3>
-        <p class="text-lighter">Codefresh includes a free-to-use hosted version of ChartMuseum. <a class="text-secondary" href="https://codefresh.io/codefresh-signup/" target="_blank">Create a Codefresh account</a> to try it out.</p>
+  -v $(pwd)/charts:/charts \
+  ghcr.io/helm/chartmuseum:v0.13.0</code></pre>
       </div>
     </div>
   </div>
