@@ -7,4 +7,5 @@ draft: false
 ---
 
 - `GET /` - HTML welcome page
+- `GET /info` - returns current ChartMuseum version
 - `GET /health` - returns 200 OK
