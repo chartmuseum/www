@@ -200,7 +200,6 @@ main {
     padding: 10px;
     overflow: auto;
     line-height: 1.45;
-    background-color: lighten($primary, 42.8%);
     border-radius: 3px;
     margin-bottom: $spacer * 2;
 
@@ -208,7 +207,6 @@ main {
       padding: 0;
       font-size: 85% !important;
       background-color: transparent;
-      color: darken($primary, 11%) !important;
       word-wrap: break-word;
     }
   }

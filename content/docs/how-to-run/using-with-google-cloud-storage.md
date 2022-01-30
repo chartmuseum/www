@@ -9,6 +9,7 @@ draft: false
 Make sure your environment is properly setup to access `my-gcs-bucket`.
 
 One way to do so is to set the `GOOGLE_APPLICATION_CREDENTIALS` var in your environment, pointing to the JSON file containing your service account key:
+
 ```
 export GOOGLE_APPLICATION_CREDENTIALS="/home/user/Downloads/[FILE_NAME].json"
 ```

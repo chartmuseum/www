@@ -37,3 +37,5 @@ To use the chart manipulation routes, simply place the name of the repo directly
 ```bash
 curl -F "chart=@mychart-0.1.0.tgz" http://localhost:8080/api/org1/repoa/charts
 ```
+
+You may also experiment with the `--depth-dynamic` flag, which should allow for dynamic depth levels (i.e. all of `/api/charts`, `/api/myrepo/charts`, `/api/org1/repoa/charts`).

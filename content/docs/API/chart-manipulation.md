@@ -12,3 +12,5 @@ draft: false
 - `GET /api/charts` - list all charts
 - `GET /api/charts/<name>` - list all versions of a chart
 - `GET /api/charts/<name>/<version>` - describe a chart version
+- `HEAD /api/charts/<name>` - check if chart exists (any versions)
+- `HEAD /api/charts/<name>/<version>` - check if chart version exists
