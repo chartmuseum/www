@@ -6,7 +6,7 @@ weight: 13
 draft: false
 ---
 
-There is a [Helm chart for *ChartMuseum*](https://github.com/kubernetes/charts/tree/master/stable/chartmuseum) itself which can be found in the official Kubernetes Charts repository.
+There is a [Helm chart for *ChartMuseum*](https://github.com/chartmuseum/charts/tree/main/src/chartmuseum) itself which can be found in the ChartMuseum repository.
 
 You can also view it on [Kubeapps Hub](https://hub.kubeapps.com/charts/stable/chartmuseum).
 
