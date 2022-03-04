@@ -70,7 +70,7 @@ draft: false
 --storage-oracle-bucket value         ocs bucket to store charts for oracle cloud storage [$STORAGE_ORACLE_BUCKET]
 --index-limit value                   parallel scan limit for the repo indexer (default: 0) [$INDEX_LIMIT]
 --debug                               show debug messages [$DEBUG]
---disable-metrics                     disable Prometheus metrics [$DISABLE_METRICS]
+--enable-metrics                      enable Prometheus metrics [$ENABLE_METRICS]
 --read-timeout value                  socket timeout in seconds (default: 0) [$READ_TIMEOUT]
 --cache-redis-password value          Redis requirepass server configuration [$CACHE_REDIS_PASSWORD]
 --storage-openstack-auth value        the OpenStack auth protocol to use. Set "v1" for v1 or "auto" for v2 and v3 [$STORAGE_OPENSTACK_AUTH]
