@@ -12,7 +12,7 @@ You may wish to offload this to an external cache store, especially for large, m
 
 ### Cache Interval
 
-When dealing with thousands of charts, you may experience latency with the default settings. This is because upon each request, the storage backend is scanned for changes compared to the cache.
+When dealing with thousands of charts, you may experience latency with the default settings.
 
 If you are ok with `index.yaml` being out-of-date for a fixed period of time, you can improve performance by using the `--cache-interval=<interval>` option.
 

@@ -10,7 +10,7 @@ The repository index (index.yaml) is dynamically generated based on packages fou
 
 `GET /index.yaml` occurs when you run `helm repo add chartmuseum http://localhost:8080` or `helm repo update`.
 
-If you manually add/remove a .tgz package from storage, it will be immediately reflected in `GET /index.yaml`.
+If you manually add/remove a .tgz package from storage, it will **not** be immediately reflected in `GET /index.yaml`. See the [Cache Interval](../docs/#cache) section for more details on how to rebuild the index from storage on an interval.
 
 You are no longer required to maintain your own version of index.yaml using `helm repo index --merge`.
 
