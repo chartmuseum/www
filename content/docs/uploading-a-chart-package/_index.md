@@ -8,7 +8,7 @@ weight: 2
 <sub>*Follow **"How to Run"** section below to get ChartMuseum up and running at ht<span>tp:/</span>/localhost:8080*<sub>
 
 First create `mychart-0.1.0.tgz` using the [Helm CLI](https://docs.helm.sh/using_helm/#installing-helm):
-```
+```bash
 cd mychart/
 helm package .
 ```
@@ -30,6 +30,6 @@ curl -F "chart=@mychart-0.1.0.tgz" -F "prov=@mychart-0.1.0.tgz.prov" http://loca
 ```
 
 You can also use the [helm-push plugin](https://github.com/chartmuseum/helm-push):
-```
-helm push mychart/ chartmuseum
+```bash
+helm cm-push mychart/ chartmuseum
 ```
