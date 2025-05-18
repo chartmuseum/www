@@ -6,7 +6,7 @@ weight: 12
 draft: false
 ---
 
-Available via [Github Package Registry](https://github.com/helm/chartmuseum/pkgs/container/chartmuseum).
+Available via [GitHub Package Registry](https://github.com/helm/chartmuseum/pkgs/container/chartmuseum).
 
 Example usage (local storage):
 ```bash
